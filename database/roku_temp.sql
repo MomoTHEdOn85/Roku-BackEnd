@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 08, 2023 at 07:13 PM
+-- Generation Time: Apr 16, 2023 at 04:18 AM
 -- Server version: 5.7.36
 -- PHP Version: 8.0.13
 
@@ -37,16 +37,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `avatar` varchar(10) DEFAULT NULL,
   `permissions` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin7;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin7;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `username`, `password`, `avatar`, `permissions`) VALUES
-(1, 'Misha', 'Ahmed', 'mishmi18', 'mekhotii', NULL, 1),
-(2, 'immama', 'ayoub', 'momo18', 'mayKool', NULL, 3),
-(3, 'hizkeel', 'malik', 'hizi23', 'mayPagal', NULL, 5);
+(1, 'misha', 'ahmed', 'mishmi18', 'mekhotii', 'kids1.png', 1),
+(2, 'immama', 'ayoub', 'momo18', 'mayKool', 'kids2.png', 3),
+(3, 'hizkeel', 'malik', 'hizi23', 'mayPagal', 'user1.png', 5),
+(4, 'momo', 'ayoub', 'momo22', 'momo11', 'user2.png', 5),
+(5, 'axin', 'zhong', 'zhong24', 'mehere22', 'user3.png', 4);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
